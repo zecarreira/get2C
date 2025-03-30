@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+O Carbon Footprint Tracker é uma aplicação que extrai e visualiza dados de emissões de carbono a partir de ficheiros Excel.
+Calcula indicadores-chave e apresenta-os num painel interativo.
 
-## Getting Started
+Principais Funcionalidades
+Upload e processamento de ficheiros Excel
+Cálculo de indicadores essenciais:
 
-First, run the development server:
+Total de emissões de CO₂
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Consumo médio de energia por empresa
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Top 5 empresas com maiores emissões
+Gráficos interativos para melhor visualização
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tecnologias Utilizadas
+Next.js com TypeScript (Frontend + Backend)
+Chart.js + react-chartjs-2 (Visualização de dados)
+xlsx.js (Processamento de ficheiros Excel)
+Tailwind CSS (Estilização rápida e eficiente)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Processamento de Dados
+Cliente-Side: O processamento ocorre diretamente no navegador para garantir privacidade e reduzir a complexidade do backend.
+Passos: Upload → Leitura e extração de dados → Normalização → Cálculo de métricas → Apresentação em gráficos.
 
-## Learn More
+Porque estas tecnologias?
+Next.js → Código unificado (frontend/backend), otimização de desempenho e facilidade de implementação.
+Processamento no cliente → Dados privados, menor custo de servidor e resposta imediata.
+Chart.js → Leve, flexível e responsivo.
+Tailwind CSS → Desenvolvimento rápido e eficiente.
 
-To learn more about Next.js, take a look at the following resources:
+########################
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Requisitos:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Node.js (Versão 18 ou superior)
 
-## Deploy on Vercel
+Passos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- git clone https://github.com/zecarreira/get2C.git
+- cd carbon-footprint-tracker
+- npm install
+- npm run dev
+- Browser -> http://localhost:3000
