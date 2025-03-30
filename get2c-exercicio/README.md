@@ -37,7 +37,7 @@ Requisitos:
 Passos:
 
 - git clone https://github.com/zecarreira/get2C.git
-- cd carbon-footprint-tracker
+- cd get2c-exercicio
 - npm install
 - npm run dev
 - Browser -> http://localhost:3000
